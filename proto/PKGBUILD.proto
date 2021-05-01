@@ -7,7 +7,6 @@
 pkgname=NAME
 pkgver=VERSION
 pkgrel=1
-epoch=
 pkgdesc=""
 arch=()
 url=""
@@ -15,7 +14,6 @@ license=('GPL')
 groups=()
 depends=()
 makedepends=()
-checkdepends=()
 optdepends=()
 provides=()
 conflicts=()
@@ -24,28 +22,19 @@ backup=()
 options=()
 install=
 changelog=
-source=("$pkgname-$pkgver.tar.gz"
-        "$pkgname-$pkgver.patch")
+source=($pkgname-$pkgver.tar.gz)
 noextract=()
-md5sums=() #generate with 'makepkg -g'
-
-prepare() {
-	cd "$srcdir/$pkgname-$pkgver"
-	patch -p1 -i "$srcdir/$pkgname-$pkgver.patch"
-}
+md5sums=() #autofill using updpkgsums
 
 build() {
-	cd "$pkgname-$pkgver"
-	./configure --prefix=/usr
-	make
-}
+  cd "$pkgname-$pkgver"
 
-check() {
-	cd "$pkgname-$pkgver"
-	make -k check
+  ./configure --prefix=/usr
+  make
 }
 
 package() {
-	cd "$pkgname-$pkgver"
-	make DESTDIR="$pkgdir/" install
+  cd "$pkgname-$pkgver"
+
+  make DESTDIR="$pkgdir/" install
 }
