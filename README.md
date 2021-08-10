@@ -7,7 +7,7 @@ https://wiki.archlinux.org/title/AUR_submission_guidelines
 
 To generate the .SRCINFO type makepkg --printsrcinfo > .SRCINFO
 
-To generate new checksums run the command updpkgsums (requires package pacman-contrib
+To generate new checksums run the command updpkgsums (requires package pacman-contrib)
 
 How to upload to AUR repository
 1. Create an account
