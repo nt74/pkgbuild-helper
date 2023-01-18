@@ -16,5 +16,5 @@ How to upload to AUR repository
 4. cd package-git
 5. cp PKGBUILD .SRCINFO (from your package)
 6. git add PKGBUILD .SRCINFO
-7. git commit -m "Initial push."
+7. git commit -m "Initial version"
 8. git push
