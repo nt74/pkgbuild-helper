@@ -7,8 +7,8 @@ https://wiki.archlinux.org/title/AUR_submission_guidelines
 
 To generate the .SRCINFO type makepkg --printsrcinfo > .SRCINFO
 
-First run git needs to set the global username information:
-git config --global user.email "you@example.com"
+First run git needs to set the global username information: <br />
+git config --global user.email "you@example.com" <br />
 git config --global user.name "Your Name"
 
 To generate new md5sums run the command updpkgsums (requires package pacman-contrib)
