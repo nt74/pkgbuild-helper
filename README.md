@@ -5,6 +5,9 @@ https://wiki.archlinux.org/index.php/Arch_package_guidelines
 
 https://wiki.archlinux.org/title/AUR_submission_guidelines
 
+For license
+https://wiki.archlinux.org/title/PKGBUILD#license
+
 To generate the .SRCINFO type makepkg --printsrcinfo > .SRCINFO
 
 First run git needs to set the global username information: <br />
