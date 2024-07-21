@@ -3,6 +3,8 @@ Helpful guide on how to generate PKGBUILD for Arch Linux distributions
 
 Make sure to read:
 
+[Creating packages](https://wiki.archlinux.org/title/Creating_packages)
+
 [Arch package guidelines](https://wiki.archlinux.org/index.php/Arch_package_guidelines)
 
 [AUR submission guidelines](https://wiki.archlinux.org/title/AUR_submission_guidelines)
