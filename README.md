@@ -32,7 +32,7 @@ sudo pacman -S pacman-contrib
 ## How to upload to AUR repository
 1. Create an account
 2. Add your ssh public key
-3. ```git clone ssh://aur@aur.archlinux.org/package-git.git```
+3. ```git -c init.defaultbranch=master clone ssh://aur@aur.archlinux.org/pkgbase.git```
 4. ```cd package-git```
 5. ```cp PKGBUILD .SRCINFO (from your package)```
 6. ```git add PKGBUILD .SRCINFO```
