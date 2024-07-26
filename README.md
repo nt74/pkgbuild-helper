@@ -16,7 +16,16 @@ Helpful guide on how to generate PKGBUILD for Arch Linux distributions
 ```
 makepkg --printsrcinfo > .SRCINFO
 ```
-First run git needs to set the global username information: <br />
+
+### Checking package sanity
+```
+namcap PKGBUILD
+```
+```
+namcap pkgname.pkg.tar.zst
+```
+
+First run git needs to set the global username information:
 ```
 git config --global user.email "you@example.com"
 ```
