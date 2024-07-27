@@ -32,6 +32,9 @@ git config --global user.email "you@example.com"
 ```
 git config --global user.name "Your Name"
 ```
+```
+git config --global init.defaultBranch main / trunk /development
+```
 
 To generate new md5sums run the command updpkgsums:
 ```
