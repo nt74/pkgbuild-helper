@@ -25,7 +25,29 @@ namcap PKGBUILD
 namcap pkgname.pkg.tar.zst
 ```
 
-First run git needs to set the global username information:
+### Options functions
+```
+options=(
+  # Default enabled options (use ! to disable)
+  'strip'      # Strip symbols from binaries
+  'docs'       # Keep documentation files
+  'emptydirs'  # Keep empty directories
+  'zipman'     # Compress manual pages
+  'ccache'     # Use ccache during build
+  'distcc'     # Use distcc during build
+  'buildflags' # Use default CFLAGS/CXXFLAGS
+  'makeflags'  # Use default MAKEFLAGS
+
+  # Default disabled options (remove ! to enable)
+  '!debug'      # Add debugging flags
+  '!libtool'    # Leave libtool (.la) files
+  '!staticlibs' # Leave static library (.a) files
+  '!lto'        # Enable link-time optimization
+  '!upx'        # Compress executables with UPX
+)
+```
+
+## First run git needs to set the global username information:
 ```
 git config --global user.email "you@example.com"
 ```
